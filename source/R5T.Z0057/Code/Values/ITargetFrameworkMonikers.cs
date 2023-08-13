@@ -51,7 +51,10 @@ namespace R5T.Z0057
         /// <remarks>
         /// Note: as of this version of .NET Standard, the old .NET framework is no longer supported.
         /// </remarks>
-        public ITargetFrameworkMoniker NET_Standard2_1 => "netstandard2.1".ToTargetFrameworkMoniker();
+        public const string Net_Standard2_1_Constant = "netstandard2.1";
+
+        /// <inheritdoc cref="Net_Standard2_1_Constant"/>
+        public ITargetFrameworkMoniker NET_Standard2_1 => ITargetFrameworkMonikers.Net_Standard2_1_Constant.ToTargetFrameworkMoniker();
 
         public ITargetFrameworkMoniker NET_Core3_1 => "netcoreapp3.1".ToTargetFrameworkMoniker();
 
