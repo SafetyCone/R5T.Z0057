@@ -13,6 +13,15 @@ namespace R5T.Z0057.Platform
     public partial interface ITargetFrameworkMonikers : IValuesMarker
     {
         /// <summary>
+        /// <para>"netcoreapp2.2"</para>
+        /// .NET Core 2.2 application.
+        /// </summary>
+        public const string NET_App_2_2_Constant = "netcoreapp2.2";
+
+        /// <inheritdoc cref="NET_App_2_2_Constant"/>
+        public string NET_App_2_2 => ITargetFrameworkMonikers.NET_App_2_2_Constant;
+
+        /// <summary>
         /// <para>"net6.0"</para>
         /// .NET 6.0.
         /// </summary>
@@ -29,6 +38,14 @@ namespace R5T.Z0057.Platform
 
         /// <inheritdoc cref="NET_5_Constant"/>
         public string NET_5 => ITargetFrameworkMonikers.NET_5_Constant;
+
+        /// <summary>
+        /// <para>"netstandard2.0"</para>
+        /// </summary>
+        public const string Net_Standard2_0_Constant = "netstandard2.0";
+
+        /// <inheritdoc cref="Net_Standard2_0_Constant"/>
+        public string Net_Standard2_0 => ITargetFrameworkMonikers.Net_Standard2_0_Constant;
 
         /// <summary>
         /// <para>"netstandard2.1"</para>
