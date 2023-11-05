@@ -13,13 +13,13 @@ namespace R5T.Z0057.Platform
     public partial interface ITargetFrameworkMonikers : IValuesMarker
     {
         /// <summary>
-        /// <para>"netcoreapp2.2"</para>
-        /// .NET Core 2.2 application.
+        /// <para>"net5.0"</para>
+        /// .NET 5.0
         /// </summary>
-        public const string NET_App_2_2_Constant = "netcoreapp2.2";
+        public const string NET_5_Constant = "net5.0";
 
-        /// <inheritdoc cref="NET_App_2_2_Constant"/>
-        public string NET_App_2_2 => ITargetFrameworkMonikers.NET_App_2_2_Constant;
+        /// <inheritdoc cref="NET_5_Constant"/>
+        public string NET_5 => ITargetFrameworkMonikers.NET_5_Constant;
 
         /// <summary>
         /// <para>"net6.0"</para>
@@ -31,13 +31,31 @@ namespace R5T.Z0057.Platform
         public string NET_6 => ITargetFrameworkMonikers.NET_6_Constant;
 
         /// <summary>
-        /// <para>"net5.0"</para>
-        /// .NET 5.0
+        /// <para>"net7.0"</para>
+        /// .NET 7.0.
         /// </summary>
-        public const string NET_5_Constant = "net5.0";
+        public const string NET_7_Constant = "net7.0";
 
-        /// <inheritdoc cref="NET_5_Constant"/>
-        public string NET_5 => ITargetFrameworkMonikers.NET_5_Constant;
+        /// <inheritdoc cref="NET_7_Constant"/>
+        public string NET_7 => ITargetFrameworkMonikers.NET_7_Constant;
+
+        /// <summary>
+        /// <para>"netcoreapp2.2"</para>
+        /// .NET Core 2.2 application.
+        /// </summary>
+        public const string NET_App_2_2_Constant = "netcoreapp2.2";
+
+        /// <inheritdoc cref="NET_App_2_2_Constant"/>
+        public string NET_App_2_2 => ITargetFrameworkMonikers.NET_App_2_2_Constant;
+
+        /// <summary>
+        /// <para>"netcoreapp3.1"</para>
+        /// .NET Core 3.1 application.
+        /// </summary>
+        public const string NET_App_3_1_Constant = "netcoreapp3.1";
+
+        /// <inheritdoc cref="NET_App_3_1_Constant"/>
+        public string NET_App_3_1 => ITargetFrameworkMonikers.NET_App_3_1_Constant;
 
         /// <summary>
         /// <para>"netstandard2.0"</para>
