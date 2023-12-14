@@ -40,6 +40,15 @@ namespace R5T.Z0057.Platform
         public string NET_7 => ITargetFrameworkMonikers.NET_7_Constant;
 
         /// <summary>
+        /// <para>"net8.0"</para>
+        /// .NET 8.0.
+        /// </summary>
+        public const string NET_8_Constant = "net8.0";
+
+        /// <inheritdoc cref="NET_8_Constant"/>
+        public string NET_8 => ITargetFrameworkMonikers.NET_8_Constant;
+
+        /// <summary>
         /// <para>"netcoreapp2.2"</para>
         /// .NET Core 2.2 application.
         /// </summary>

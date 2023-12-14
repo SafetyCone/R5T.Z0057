@@ -17,16 +17,24 @@ namespace R5T.Z0057
 
 
         /// <summary>
+        /// <para><inheritdoc cref="NET_8" path="/summary"/></para>
         /// When you need a target framework moniker, but don't want to think about it.
-        /// Chooses <see cref="NET_6"/> as the default.
+        /// Chooses <see cref="NET_8"/> as the default.
         /// </summary>
-        public ITargetFrameworkMoniker Default => this.NET_6;
+        public ITargetFrameworkMoniker Default => this.NET_8;
+
         /// <summary>
         /// When you want to use the standard target framework moniker.
-        /// /// Chooses <see cref="NET_6"/> as the standard.
+        /// Chooses <see cref="NET_6"/> as the standard.
         /// </summary>
         public ITargetFrameworkMoniker Standard => this.NET_6;
 
+
+        /// <inheritdoc cref="Platform.ITargetFrameworkMonikers.NET_8"/>
+        public ITargetFrameworkMoniker NET_8 => _Platform.NET_8.ToTargetFrameworkMoniker();
+
+        /// <inheritdoc cref="Platform.ITargetFrameworkMonikers.NET_7"/>
+        public ITargetFrameworkMoniker NET_7 => _Platform.NET_7.ToTargetFrameworkMoniker();
 
         /// <inheritdoc cref="Platform.ITargetFrameworkMonikers.NET_6"/>
         public ITargetFrameworkMoniker NET_6 => _Platform.NET_6.ToTargetFrameworkMoniker();
