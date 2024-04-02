@@ -49,6 +49,15 @@ namespace R5T.Z0057.Platform
         public string NET_8 => ITargetFrameworkMonikers.NET_8_Constant;
 
         /// <summary>
+        /// <para>"net8.0-windows"</para>
+        /// .NET 8.0 for Windows Forms.
+        /// </summary>
+        public const string NET_8_Windows_Constant = "net8.0-windows";
+
+        /// <inheritdoc cref="NET_8_Windows_Constant"/>
+        public string NET_8_Windows => ITargetFrameworkMonikers.NET_8_Windows_Constant;
+
+        /// <summary>
         /// <para>"netcoreapp2.2"</para>
         /// .NET Core 2.2 application.
         /// </summary>
