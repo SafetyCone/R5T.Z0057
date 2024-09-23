@@ -1,6 +1,7 @@
 using System;
 
 using R5T.T0131;
+using R5T.T0143;
 using R5T.T0218;
 using R5T.T0218.Extensions;
 
@@ -12,7 +13,10 @@ namespace R5T.Z0057
     public partial interface ITargetFrameworkMonikers : IValuesMarker
     {
 #pragma warning disable IDE1006 // Naming Styles
+
+        [Ignore]
         public Platform.ITargetFrameworkMonikers _Platform => Platform.TargetFrameworkMonikers.Instance;
+
 #pragma warning restore IDE1006 // Naming Styles
 
 
